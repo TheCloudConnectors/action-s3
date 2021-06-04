@@ -25,4 +25,4 @@ if [ -z "$EXTRA_ARGS" ]; then
   EXTRA_ARGS=""
 fi
 
-sh -c "aws s3 cp ${SOURCE_DIR:-.} s3://${AWS_S3_BUCKET}/${DEST_DIR} $EXTRA_ARGS"
+sh -c "aws s3 cp '${SOURCE_DIR:-.}' 's3://${AWS_S3_BUCKET}/${DEST_DIR} $EXTRA_ARGS'"
