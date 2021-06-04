@@ -1,0 +1,6 @@
+name: "S3 Copy"
+description: "Copy a file/directory to an AWS S3 bucket"
+author: The Cloud Connectors
+runs:
+  using: docker
+  image: Dockerfile
